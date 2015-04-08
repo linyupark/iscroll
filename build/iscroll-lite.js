@@ -533,6 +533,7 @@ IScroll.prototype = {
 			}
 
 			if ( this.options.click ) {
+                                if(e.type === "mouseup") return;
 				utils.click(e);
 			}
 
